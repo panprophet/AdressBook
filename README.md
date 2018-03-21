@@ -4,7 +4,7 @@ After pulling AdressBook make sure to install dependencies in AdressBook folder:
 cd AdressBook</br>
 npm install<br/>
 npm init<br/>
-
+<br/>
 <b>Database</b> for MySql is in folder mySqlDatabase, make sure is installed and run. <br/>
 
 To start <b>Rest</b> api:<br/>
