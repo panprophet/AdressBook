@@ -1,0 +1,411 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+a:hover {
+    color: darkgray;
+    font-weight: 700;
+}
+#root {
+    width: 60%;
+    height: 100%;
+    
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.menu {
+    height: 12vh;
+    border-bottom: 1px solid gray;
+}
+.menu .inner {
+    height: inherit;
+}
+.menu .inner div{
+    width: 33%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    float: left;
+    font-size: 28px;
+}
+.countryTitle {
+    font-size: 28px;
+    margin-top: 5%;
+}
+.sectionTitle {
+    width: 50%;
+    font-size: 28px;
+    border-bottom: 1px solid gray;
+    margin: 1.5% 0 1.5% 0;
+}
+.countryTitle .countryCombo {
+    height: 33px;
+    line-height:30px;
+    margin-left: 20px;
+    background:#f4f4f4;
+    font-size: 32px;
+}
+.inputforms {
+    width: 60%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 32px;
+}
+.textinput {
+    height: 21px;
+    width: 50%;
+    margin: 1.5% 0 1.5% 2%;
+    font-size: 18px;
+    
+}
+.picinput {
+    height: 80px;
+    width: 80px;
+    border: 1px solid gray;
+    margin: 0 0 2% 2%;
+    font-size: 16px;
+    text-align: center;
+}
+/*
+.picinput:hover{
+    height: 78px;
+    width: 80px;
+    cursor: pointer;
+    border: 2px dotted black;
+    margin-left: 1.9%;
+}
+*/
+.picinput img {
+    height: inherit;
+    width: inherit;
+}
+.picinput div {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.picbutton {
+    margin: 0 0 2% 2%;
+}
+.searchBox {
+/*    width: 60%;*/
+    height: 5%;
+}
+.searchBox div {
+    float: left;
+}
+.searchBox input {
+    height: 21px;
+    width: 21%;
+    margin: 1% 0 2.5% 2.5%;
+}
+#new {
+    border: 1px solid cadetblue;
+    border-radius: 8px;
+    color: cadetblue;
+    background-color: white;
+
+}
+#new:hover {
+    cursor: pointer;
+    background-color: cadetblue;
+    color:  white;
+    border: 1px solid white;
+}
+#update {
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: cadetblue;
+    color:  white;
+}
+#updatefalse {
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: lightgray;
+    color:  white;
+
+    cursor: not-allowed;
+}
+#update:hover {
+    cursor: pointer;
+    color: cadetblue;
+    background-color: white;
+    border: 1px solid cadetblue;
+}
+#delete {
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: red;
+    color:  white;
+
+}
+#delete:hover {
+    cursor: pointer;
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+}
+.disabled:hover {
+    cursor: crosshair;
+}
+.mailError {
+    margin-bottom: 5%;
+    float: left;
+    margin-left: 6.1%;
+}
+.page {
+    height: 76vh;
+}
+.showMe {
+    min-height: 150px;
+    height: 55vh;
+    overflow-y: scroll;
+    border: 1px solid gray;
+}
+#agencyinput {
+/*    min-height: 150px;*/
+/*    width: 60%;*/
+    height: 61vh;
+    overflow-y: unset;
+    border: unset;
+}
+#agencyinput .innerform {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.showMe .contact-row {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #808080;
+}
+.showMe .contact-row .contactRadio {
+    height: auto;
+    width: 10%;
+    float: left;
+    position: relative;
+    top: 50%;
+/*    left: 2.5%;*/
+	left: 5%;
+    transform: translateY(-50%);
+}
+.showMe .contact-row .contactInfo {
+    width: 65%;
+    height: auto;
+    position: relative;
+    float: left;
+    font-size: 16px;
+    top: 50%;
+	left: 5%;
+    transform: translateY(-50%);
+}
+.showMe .contact-row .avatar {
+    height: auto;
+    width: 25%;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+.showMe .contact-row .avatar img {
+    height: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.showMe .select {
+    width: 100%;
+}
+.showMw .inputRow {
+    height: auto;
+}
+.showMe .select .selectbox {
+    width: 45%;
+    float: left;
+    height: 40px;
+    margin-left: 2%;
+}
+.showMe .select .textselect {
+    font-size: 18px;
+    width: 100px;
+    float: left;
+    height: 40px;
+    margin-left: 2%;
+}
+.showMe .select .agencyselect {
+    width: 45%;
+    float: left;
+    height: 40px;
+    margin-left: 1%;
+}
+#agencies {
+    height: 61.2vh;
+}
+#agencies .contact-row .contactInfo {
+    width: 80%;
+    left: 5%;
+}
+#insertcityform {
+    width: 70%;
+    margin-top: 50px;
+    overflow-y: unset;
+    border: unset;
+}
+#insertcityform .inputRow {
+    margin-top: 2%;
+}
+#insertcityform .select {
+    height: 40px;
+}
+#insertcityform .buttonWrapper .button {
+    height: 45px;
+    width: 25%;
+    margin-left: 2%;
+}
+.buttonWrapper {
+    width: 100%;
+    height: 12vh;
+}
+.buttonWrapper .button {
+    height: 45px;
+    width: 25%;
+    margin-top: 3%;
+    float: left;
+    margin-left: 6.1%;
+    font-size: 32px;
+    text-align: center;
+}
+
+/*
+@-moz-document url-prefix() {
+    .countryTitle .contryCombo{
+        padding: 15px 0!important;
+    }
+}
+*/
+@media only screen and (max-height: 680px) {
+/*
+    .menu .inner div{
+        font-size: 24px;
+    }
+*/
+    .textinput {
+        width: 45%;
+        
+    }
+    .picinput {
+/*        width: 50%;*/
+        float: left;
+    }
+    .picbutton {
+/*        width: 50%;*/
+        float: left;
+    }
+    .picbutton input {
+/*
+        position: relative;
+        margin-top: 50%;
+        transform: translateY(-50%);
+*/
+    }
+    #agencyinput .innerform {
+        height: 80%;
+    }
+}
+@media only screen and (max-width: 930px) {
+    .showMe .select .selectbox {
+        float:none;
+    }
+    
+}
+@media only screen and (max-width: 870px) {
+    .buttonWrapper .button {
+        height: 35px;
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width: 760px) {
+    #root {
+        width: 85%;
+    }
+    .buttonWrapper .button {
+        height: 35px;
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    #root {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 570px) {
+	.searchBox input {
+		width: 42%;
+	}
+}
+@media only screen and (max-width: 500px) {
+	#root {
+		height: 100vh;
+	}
+    .sectionTitle {
+        font-size: 22px;
+    }
+    .menu .inner div {
+        font-size: 22px;
+    }
+    .showMe {
+        height: 30vh;
+/*        overflow-y: unset;*/
+/*        border: unset;*/
+    }
+    #agencies {
+        height: auto;
+    }
+    .showMe .contact-row .avatar {
+        width: 15%;
+    }
+    .buttonWrapper .button {
+        width: 32%;
+        margin-left: unset;
+    }
+    #insertcityform {
+        width: 90%;   
+    }
+    #insertcityform .select {
+        height: auto;
+    }
+    #insertcityform .select .selectbox {
+        height: auto;
+    }
+}
+@media only screen and (max-width: 375px) {
+	.searchBox input {
+		width: 45%;
+	}
+	.showMe .contact-row .avatar {
+		display: none;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.searchBox input {
+		width: 40%;
+	}
+
+}
