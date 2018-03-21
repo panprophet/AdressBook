@@ -39,7 +39,7 @@ class Agencies extends React.Component {
     }
     
     getAgencies() {
-        fetch('http://192.168.99.15:3001/Agencies')
+        fetch('http://localhost:3001/Agencies')
             .then(results => results.json())
             .then(agencies => this.setState({agencies}))    
     }

@@ -15,7 +15,7 @@ class Countries extends React.Component {
     }
     componentWillMount() {
 
-        fetch('http://192.168.99.15:3001/Countries')
+        fetch('http://localhost:3001/Countries')
 
             .then(results => 
                  results.json()
@@ -28,8 +28,8 @@ class Countries extends React.Component {
         let formName = "Add city to country:"
         return (
             <div>
-            <form className="showMe" id="insertcityform" onSubmit={this.handleSubmit}>    
-                <div className="countryTitle">{formName}</div>
+            <form className="cityinput" id="insertcityform" onSubmit={this.handleSubmit}>    
+                <div className="sectionTitle">{formName}</div>
                 <div className='row inputRow select'>
                     <div className="textselect">Select country:</div>
                     <div className="selectbox">

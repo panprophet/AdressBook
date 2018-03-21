@@ -18,7 +18,7 @@ class Countries extends React.Component {
     }  
     
     componentDidMount() {        
-        fetch('http://192.168.99.15:3001/Countries')
+        fetch('http://localhost:3001/Countries')
             .then(results => results.json())
             .then(countries => this.setState({countries}))
     }

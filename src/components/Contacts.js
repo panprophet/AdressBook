@@ -39,7 +39,7 @@ class Contacts extends React.Component {
     }
 	
     async getContacts(){  
-        let response = await fetch('http://192.168.99.15:3001/Contacts')
+        let response = await fetch('http://localhost:3001/Contacts')
         let contacts = await response.json();
         this.setState({contacts})
     }

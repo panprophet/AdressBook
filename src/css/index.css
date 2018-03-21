@@ -110,13 +110,7 @@ body {
 }
 #root div .page div .populateMe {
     height: 80%;
-/*	height: auto;*/
 }
-/*
-#root div .page div .populateMe .innerform {
-	height: 100%;
-}
-*/
 #root div .page div .populateMe .innerform select{
     margin-left: 2%;
 }
@@ -157,6 +151,18 @@ body {
     margin-left: 6.1%;
     font-size: 32px;
     text-align: center;
+}
+#root div .page div .cityinput{
+	width: 50%;
+}
+#root div .page div .cityinput .button {
+	width: 50%;
+	height: 45px;
+	font-size: 32px;
+	text-align: center;
+}
+#root div .page div .cityinput .inputRow {
+	margin: 1% 0 1% 0;
 }
 a {
     color: black;
